@@ -1,0 +1,57 @@
+body {
+    padding-bottom: 20px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column; /* Atur konten secara vertikal */
+    justify-content: center; /* Pusatkan konten di dalam body offcanvas */
+    height: 100%; /* Pastikan tinggi 100% agar bisa merata */
+}
+
+.navbar {
+    background-color: rgba(
+        221,
+        221,
+        221,
+        0.432
+    ) !important; /* Make navbar transparent */
+    transition: background-color 0.3s; /* Smooth transition for background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.nav-link {
+    padding: 1rem; /* Adjust padding as needed */
+    margin: 0 15px; /* Add horizontal margin to create space between menu items */
+    position: relative; /* To position the underline */
+}
+
+.nav-link::after {
+    content: ""; /* Create an empty content */
+    display: block; /* Display as block element */
+    width: 100%; /* Full width of the nav link */
+    height: 3px; /* Height of the underline */
+    background-color: #007bff; /* Color of the underline */
+    position: absolute; /* Position it absolutely */
+    left: 0; /* Align it to the left */
+    bottom: -5px; /* Position it below the nav link */
+    transition: background-color 0.3s; /* Smooth transition for the underline */
+    opacity: 0; /* Initially hidden */
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    opacity: 1; /* Show underline on hover or if active */
+}
+
+.offcanvas {
+    background-color: white; /* Change background color of Offcanvas if desired */
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #dee2e6; /* Optional: Add border to the header */
+}
