@@ -1,0 +1,90 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* background */
+.login {
+    min-height: 100vh;
+    background-size: cover;
+}
+
+#frameku {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px rgb(0, 0, 0);
+}
+
+/* header */
+.header h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.header p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+/* form login */
+.login-form label {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.login-form input {
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC !important;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.login-form a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    margin-top: 10px;
+    display: block;
+}
+
+.login-form .signin {
+    width: 100%;
+    height: 42px;
+    background: #000000;
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.login-form span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.login-form span a {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 30px;
+    }
+}
+

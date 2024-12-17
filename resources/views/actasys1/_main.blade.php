@@ -1,24 +1,17 @@
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Andi Praseno">
-
-    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>{{ config('app.software.nama') }}</title>
+    <meta name="author" content="andipraseno@gmail.com">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
-    <link rel="shortcut icon" href="{{ url('assets/favicon.ico') }}">
-    <link href="{{ url('/assets/favicon.ico') }}" rel="apple-touch-icon" />
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="shortcut icon" href="{{ mix('/images/app-icon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ mix('/images/app-icon.ico') }}">
 
     <link href="{{ url('/bootstrap/') }}/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ url('/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet" />

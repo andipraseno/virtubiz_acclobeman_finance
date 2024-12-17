@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="{{ url('/dashboard') }}">
-            <img src="{{ url('/storage/company/' . Session::get('actasys_company_id') . '.png') }}" alt="Neomi Service"
+            <img src="{{ url('/images/app-icon.ico') }}" alt="Neomi Service"
                 width="50" height="50" class="me-2">
             <h3 class="text-secondary mb-0">{{ Session::get('actasys_company_kode') }}</h3>
         </a>
