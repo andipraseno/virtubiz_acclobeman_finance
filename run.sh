@@ -10,7 +10,7 @@ composer dump-autoload
 
 composer require <your-package> --ignore-platform-reqs
 
-php artisan serve --port=8801
+php artisan serve --port=8702
 
 php artisan config:clear
 php artisan cache:clear
