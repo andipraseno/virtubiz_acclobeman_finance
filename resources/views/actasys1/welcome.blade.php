@@ -8,7 +8,8 @@
             <div class="card">
                 <div class="card-body p-4">
                     <div class="text-center mb-4">
-                        <img class="mb-2" src="{{ url('/assets') }}/banner.png" alt="" width="100px" height="100px">
+                        <img class="mb-2" src="{{ url('/images/app-icon.ico') }}" alt="" width="100px"
+                            height="100px">
                         <h5 class="text-secondary" style="font-size: 12pt">{{ config('app.software.nama') }}</h5>
                     </div>
 

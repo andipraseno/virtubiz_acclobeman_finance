@@ -57,7 +57,7 @@ class CostCenterController extends BaseController
         // Ambil input request
         $id = $request->id;
         $nama = $request->nama;
-        $plafond = bilangan::fit_numeric($request->input('plafond'));
+        $plafond = bilangan::format_number($request->input('plafond'));
 
         // Validasi input
         $errList = [

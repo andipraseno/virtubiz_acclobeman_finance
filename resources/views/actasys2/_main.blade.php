@@ -21,7 +21,7 @@
 
     <style>
         body {
-            background-image: url('{{ url('/assets/hero-bg.jpg') }}');
+            background-image: url('{{ url('/images/app-background.jpg') }}');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
