@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Validator;
 
 use App\Helpers\bilangan;
 
-use App\Models\tb_mst_cst as tbCostCenter;
+use App\Models\tb_mst_cos as tbCostCenter;
 
 class CostCenterController extends BaseController
 {
@@ -57,7 +57,7 @@ class CostCenterController extends BaseController
         // Ambil input request
         $id = $request->id;
         $nama = $request->nama;
-        $plafond = bilangan::format_number($request->input('plafond'));
+        $plafond = bilangan::format_angka($request->input('plafond'));
 
         // Validasi input
         $errList = [

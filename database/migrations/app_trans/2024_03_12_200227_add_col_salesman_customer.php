@@ -13,7 +13,7 @@ class AddColSalesmanCustomer extends Migration
      */
     public function up()
     {
-        Schema::table('tb_mst_cst', function (Blueprint $table) {
+        Schema::table('tb_mst_cos', function (Blueprint $table) {
             $table->double('salesman_id')->nullable();
         });
     }

@@ -9,14 +9,14 @@ use App\Traits\UsesUuid;
 // ************************************
 // cost center
 // ************************************
-class tb_mst_cst extends Model
+class tb_mst_cos extends Model
 {
     use HasFactory, UsesUuid;
 
     // variabel
     protected $connection = 'mysql';
 
-    protected $table = 'tb_mst_cst';
+    protected $table = 'tb_mst_cos';
 
     protected $casts = ['id' => 'string'];
 

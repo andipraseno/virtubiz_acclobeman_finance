@@ -16,7 +16,7 @@ use App\Models\tb_mst_coa_lv1 as tbAkunLevel1;
 use App\Models\tb_mst_coa_lv2 as tbAkunLevel2;
 use App\Models\tb_mst_coa_lv3 as tbAkunLevel3;
 use App\Models\tb_mst_coa as tbAkun;
-use App\Models\tb_mst_cst as tbCostCenter;
+use App\Models\tb_mst_cos as tbCostCenter;
 use App\Models\tb_mst_shf as tbShift;
 use App\Models\tb_mst_prd as tbProduk;
 use App\Models\tb_mst_ses as tbSesi;

@@ -39,7 +39,7 @@ return array(
     'App\\Models\\tb_mst_coa_lv1' => $baseDir . '/app/Models/tb_mst_coa_lv1.php',
     'App\\Models\\tb_mst_coa_lv2' => $baseDir . '/app/Models/tb_mst_coa_lv2.php',
     'App\\Models\\tb_mst_coa_lv3' => $baseDir . '/app/Models/tb_mst_coa_lv3.php',
-    'App\\Models\\tb_mst_cst' => $baseDir . '/app/Models/tb_mst_cst.php',
+    'App\\Models\\tb_mst_cos' => $baseDir . '/app/Models/tb_mst_cos.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
