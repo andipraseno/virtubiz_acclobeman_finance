@@ -1,7 +1,10 @@
 {
-    "/js/app.js": "/js/app.js",
+    "/js/date.js": "/js/date.js",
+    "/js/formatter.js": "/js/formatter.js",
+    "/js/message.js": "/js/message.js",
+    "/js/print.js": "/js/print.js",
+    "/css/navbar.css": "/css/navbar.css",
     "/css/main.css": "/css/main.css",
-    "/css/login.css": "/css/login.css",
     "/images/app-background.jpg": "/images/app-background.jpg",
     "/images/app-icon.ico": "/images/app-icon.ico",
     "/images/app-welcome-icon.png": "/images/app-welcome-icon.png",

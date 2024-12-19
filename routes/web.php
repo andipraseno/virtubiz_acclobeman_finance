@@ -4,16 +4,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('actasys_loader')->group(function () {
     Route::prefix('/')->group(function () {
-        Route::get('/', 'actasys1\ActasysController@index');
+        Route::get('/', 'actasys\ActasysController@index');
+    });
 
-        Route::post('/login', 'actasys1\ActasysController@login');
-        Route::get('/logout', 'actasys1\ActasysController@logout');
+    Route::prefix('login')->group(function () {
+        Route::get('/', 'actasys1\LoginController@index');
+        Route::post('/start', 'actasys1\LoginController@start');
 
-        Route::get('/reset', 'actasys1\ResetController@index');
-        Route::post('/reset_start', 'actasys1\ResetController@start');
-
-        Route::get('/changepassword/{link_aktivasi}', 'actasys1\ChangePasswordController@index');
-        Route::post('/changepassword_start', 'actasys1\ChangePasswordController@start');
+        Route::get('/logout', 'actasys1\LoginController@logout');
     });
 
     Route::middleware('actasys_authorizer')->group(function () {

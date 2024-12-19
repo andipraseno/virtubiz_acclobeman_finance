@@ -1,4 +1,4 @@
-@extends('actasys2._main')
+@extends('actasys.main')
 
 @section('container')
     <style>
@@ -29,7 +29,7 @@
         }
     </style>
 
-    @include('actasys2._menu', [
+    @include('actasys._navbar', [
         'menu_id' => 2,
     ])
 
@@ -91,5 +91,5 @@
         </div>
     </div>
 
-    @include('actasys2._footer')
+    @include('actasys._footer')
 @endsection

@@ -1,4 +1,4 @@
-@extends('actasys2._main')
+@extends('actasys.main')
 
 @section('container')
     <style>
@@ -27,7 +27,7 @@
         }
     </style>
 
-    @include('actasys2._menu', ['menu_id' => 3])
+    @include('actasys._navbar', ['menu_id' => 3])
 
     <div class="container" style="margin-top: 100px">
         <div class="card">
@@ -105,5 +105,5 @@
         </div>
     </div>
 
-    @include('actasys2._footer')
+    @include('actasys._footer')
 @endsection

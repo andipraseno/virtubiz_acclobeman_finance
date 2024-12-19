@@ -1,4 +1,4 @@
-@extends('actasys2._main')
+@extends('actasys.main')
 
 @section('container')
     @php
@@ -9,7 +9,7 @@
         $plafond = old('plafond', $ada ? $post[0]['plafond'] : '');
     @endphp
 
-    @include('actasys2._menu', [
+    @include('actasys._navbar', [
         'menu_id' => 4,
     ])
 
@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    @include('actasys2._footer')
+    @include('actasys._footer')
 
     <script>
         new Cleave('#txtPlafond', {

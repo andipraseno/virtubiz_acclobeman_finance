@@ -1,4 +1,4 @@
-@extends('actasys2._main')
+@extends('actasys.main')
 
 @section('container')
     @php
@@ -9,7 +9,7 @@
         $tipe = old('tipe', $ada ? $post[0]['tipe'] : '');
     @endphp
 
-    @include('actasys2._menu', [
+    @include('actasys._navbar', [
         'menu_id' => 2,
     ])
 
@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    @include('actasys2._footer')
+    @include('actasys._footer')
 
     @if (session('formSuccess'))
         <script>

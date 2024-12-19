@@ -1,87 +1,18 @@
-.readonly {
-    background-color: rgb(242, 242, 242, 242);
+html,
+body {
+    position: relative;
+    background: url(/images/app-background.jpg) no-repeat center center
+        fixed;
+    background-size: cover;
 }
 
-.readonly:focus {
-    background-color: rgb(242, 242, 242, 242);
+.form-login {
+    margin-top: 7%;
+    max-width: 450px;
+    width: 450px;
+    padding: 1rem;
 }
 
-.readonly-black {
-    background-color: black;
-    color: white;
-}
-
-.readonly-bold {
-    background-color: rgb(242, 242, 242, 242);
-    font-weight: bold;
-}
-
-.readonly-bold:focus {
-    background-color: rgb(242, 242, 242, 242);
-    font-weight: bold;
-}
-
-.readonly-black:focus {
-    background-color: black;
-    color: white;
-}
-
-input:disabled {
-    opacity: 1 !important;
-    cursor: not-allowed;
-    color: white !important;
-    background-color: black !important;
-    pointer-events: none;
-}
-
-.map-table-container {
-    width: 100%;
-    overflow-x: auto;
-}
-
-.map-table {
-    width: max-content;
-    border-collapse: collapse;
-}
-
-.map-th,
-.map-td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-.map-th {
-    background-color: #f2f2f2;
-}
-
-.action-col {
-    width: 100px;
-    position: sticky;
-    left: 0;
-    z-index: 1;
-}
-
-.produk-col {
-    width: 240px;
-}
-
-.varian-col {
-    width: 200px;
-}
-
-.qty-col {
-    width: 130px;
-}
-
-.satuan-col {
-    width: 90px;
-}
-
-.harga-col {
-    width: 130px;
-}
-
-.totalharga-col {
-    width: 130px;
+.form-main {
+    margin-top: 100px;
 }

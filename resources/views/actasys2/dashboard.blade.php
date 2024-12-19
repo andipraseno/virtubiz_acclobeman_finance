@@ -1,40 +1,11 @@
-@extends('actasys2._main')
+@extends('actasys.main')
 
 @section('container')
-    <style>
-        .boxme {
-            border: 1px solid #016efc;
-            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .card-header h4 span {
-                font-size: 10pt;
-                /* Adjust the font size for smaller screens */
-            }
-
-            .btn i {
-                font-size: 16pt;
-                /* Make icons smaller on smaller screens */
-            }
-
-            .btn span {
-                font-size: 12pt;
-                /* Adjust text size within buttons */
-            }
-        }
-
-        .equal-width-btn {
-            min-width: 110px;
-        }
-    </style>
-
-    @include('actasys2._menu', [
+    @include('actasys._navbar', [
         'menu_id' => 1,
     ])
 
-    <div class="container" style="margin-top: 100px">
+    <div class="form-main">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card">
@@ -53,5 +24,5 @@
         </div>
     </div>
 
-    @include('actasys2._footer')
+    @include('actasys._footer');
 @endsection
