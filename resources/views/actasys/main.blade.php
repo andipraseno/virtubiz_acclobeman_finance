@@ -26,6 +26,8 @@
     @yield('container')
 
     <script>
+        const btnLogout = document.querySelector("#btnLogout");
+
         btnLogout.addEventListener("click", function(event) {
             event.preventDefault();
 

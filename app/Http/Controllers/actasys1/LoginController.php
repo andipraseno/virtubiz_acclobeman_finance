@@ -61,6 +61,7 @@ class LoginController extends BaseController
 
             $this_company_id = '';
             $this_company_nama = '';
+            $this_company_kode = '';
             $this_company_alamat = '';
             $this_company_handphone = '';
             $this_company_email = '';
@@ -74,6 +75,7 @@ class LoginController extends BaseController
                 ->select(
                     $tbUser->get_table() . '.*',
                     'A.nama AS company_nama',
+                    'A.kode AS company_kode',
                     'A.alamat AS company_alamat',
                     'A.handphone AS company_handphone',
                     'A.email AS company_email'
@@ -89,6 +91,7 @@ class LoginController extends BaseController
                 $this_user_handphone = $post->pluck('handphone')[0];
 
                 $this_company_id = $post->pluck('company_id')[0];
+                $this_company_kode = $post->pluck('company_kode')[0];
                 $this_company_nama = $post->pluck('company_nama')[0];
                 $this_company_alamat = $post->pluck('company_alamat')[0];
                 $this_company_handphone = $post->pluck('company_handphone')[0];
@@ -100,6 +103,7 @@ class LoginController extends BaseController
                 Session::put('actasys_user_handphone', $this_user_handphone);
 
                 Session::put('actasys_company_id', $this_company_id);
+                Session::put('actasys_company_kode', $this_company_kode);
                 Session::put('actasys_company_nama', $this_company_nama);
                 Session::put('actasys_company_alamat', $this_company_alamat);
                 Session::put('actasys_company_handphone', $this_company_handphone);

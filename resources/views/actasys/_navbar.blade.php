@@ -54,7 +54,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="logout-link">
+                        <a href="#" class="nav-link" id="btnLogout" data-logout-url="{{ url('/login/logout') }}">
                             <i class="bi bi-box-arrow-right"></i> Logout
                         </a>
                     </li>
