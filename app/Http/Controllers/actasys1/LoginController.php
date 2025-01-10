@@ -26,8 +26,8 @@ class LoginController extends BaseController
     public function start(Request $request)
     {
         // ambil parameter
-        $email = $request->email;
-        $password = $request->password;
+        $email = $request->input('email');
+        $password = $request->input('password');
 
         // cek error
         $errList = array(

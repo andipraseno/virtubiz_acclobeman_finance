@@ -213,9 +213,9 @@ class AkunController extends BaseController
     public function add_save(Request $request)
     {
         // Ambil input request
-        $id = $request->id;
-        $nama = $request->nama;
-        $level3_id = $request->level3_id;
+        $id = $request->input('id');
+        $nama = $request->input('nama');
+        $level3_id = $request->input('level3_id');
 
         // Validasi input
         $errList = [

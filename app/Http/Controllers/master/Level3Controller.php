@@ -155,9 +155,9 @@ class Level3Controller extends BaseController
     public function add_save(Request $request)
     {
         // Ambil input request
-        $id = $request->id;
-        $nama = $request->nama;
-        $level2_id = $request->level2_id;
+        $id = $request->input('id');
+        $nama = $request->input('nama');
+        $level2_id = $request->input('level2_id');
 
         // Validasi input
         $errList = [

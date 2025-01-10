@@ -55,8 +55,8 @@ class CostCenterController extends BaseController
     public function save(Request $request)
     {
         // Ambil input request
-        $id = $request->id;
-        $nama = $request->nama;
+        $id = $request->input('id');
+        $nama = $request->input('nama');
         $plafond = bilangan::format_angka($request->input('plafond'));
 
         // Validasi input

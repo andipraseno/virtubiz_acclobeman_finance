@@ -103,9 +103,9 @@ class Level2Controller extends BaseController
     public function save(Request $request)
     {
         // Ambil input request
-        $id = $request->id;
-        $nama = $request->nama;
-        $level1_id = $request->level1_id;
+        $id = $request->input('id');
+        $nama = $request->input('nama');
+        $level1_id = $request->input('level1_id');
 
         // Validasi input
         $errList = [
